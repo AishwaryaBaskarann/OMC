@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+  <body>
+
+    <%- include('./partials/nav.ejs') %>
+      <%- include('./partials/footer.ejs') %>
+
+        <div class="wrapperl">
+          <div class="title">LOGIN</div>
+          <div class="form">
+            <form method="" action="/home">
+              <label class="inputfield">Login id: </label>
+              <input type="text" name="text" class="form-control" class="input" id="exampleFormControlInput1"
+                placeholder="Please enter your registered name" />
+              <br>
+          </div>
+          <div class="form">
+            <label class="inputfield">Password: </label>
+            <input type="password" name="text" class="form-control" id="exampleFormControlInput2"
+              placeholder="Please enter your password" />
+            <br>
+          </div>
+          <!-- <button type="submit" class="btn btn-primary mb-2 submit">
+          Login
+        </button> -->
+          <div class="inputfield">
+            <input type="submit" value="Login" class="btn">
+          </div>
+          <div id="here">
+            Click&nbsp;<a id="her" href="index.ejs">here&nbsp;</a>to Register
+          </div>
+        </div>
+
+        </div>
+
+        </form>
+  </body>
+
+</html>

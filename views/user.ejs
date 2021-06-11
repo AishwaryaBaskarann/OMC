@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+  <body>
+
+    <%- include('./partials/nav.ejs') %>
+
+      <div class="branding-patient">Patient Details</div>
+      <div class="hi">Please choose valid input:</div>
+      <div class="form-div">
+        <!-- <form action="diagnosis.html"> -->
+        <form method="POST" action="/diagnosis">
+          <div class="form-group">
+            <label for="exampleFormControlSelect3">Symp1</label>
+            <select class="form-control" id="exampleFormControlSelect4">
+              <option value="fever" name="s1">fever</option>
+              <option value="runny nose" name="s2">runny nose</option>
+              <option value="headache" name="s3">headache</option>
+              <option value="vomiting" name="s4">vomiting</option>
+              <option value="bloating" name="s5">bloating</option>
+              <option value="nosebleed" name="s6">nosebleed</option>
+              <option value="leg pain" name="s7">leg pain</option>
+              <option value="ear pain" name="s8">ear pain</option>
+              <option value="eye pain" name="s9">eye pain</option>
+              <option value="difficulty in swallowing" name="s10">difficulty in swallowing</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect3">Symp2</label>
+            <select class="form-control" id="exampleFormControlSelect4">
+              <option value="dry cough" name="s1">dry cough</option>
+              <option value="sneezing" name="s2">sneezing</option>
+              <option value="nausea" name="s3">nausea</option>
+              <option value="diarrhoea" name="s4">diarrhoea</option>
+              <option value="burping" name="s5">burping</option>
+              <option value="breathing problem" name="s6">breathing problem</option>
+              <option value="muscle pain" name="s7">muscle pain</option>
+              <option value="sleep trouble" name="s8">sleep trouble</option>
+              <option value="sensitivity to light" name="s9">sensitivity to light</option>
+              <option value="sore throat" name="s10">sore throat</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect3">Symp3</label>
+            <select class="form-control" id="exampleFormControlSelect4">
+              <option value="tiredness" name="s1">tiredness</option>
+              <option value="congestion" name="s2">congestion</option>
+              <option value="sensitivity to light and sound" name="s3">sensitivity to light and sound</option>
+              <option value="cramping" name="s4">cramping</option>
+              <option value="heartburn" name="s5">heartburn</option>
+              <option value="vision problem" name="s6">vision problem</option>
+              <option value="join pain" name="s7">join pain</option>
+              <option value="trouble hearing" name="s8">trouble hearing</option>
+              <option value="feeling something in eyes" name="s9">feeling something in eyes</option>
+              <option value="cough" name="s10">cough</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2 submit" onclick="myfunction(s1,s2,s3)">
+            Get Diagnosis
+          </button>
+        </form>
+  </body>
+
+</html>

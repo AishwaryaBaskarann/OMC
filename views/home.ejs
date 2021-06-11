@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+  <%- include('./partials/nav.ejs') %>
+    <%- include('./partials/footer.ejs') %>
+
+      <body>
+
+
+
+        <p class="para">
+          Hello! <br><br> You’re about to use a short , safe and anonymous health checkup. Your answers will be
+          carefully
+          analyzed and you’ll learn about possible causes of your symptoms. <br><br>
+          Use the vaccination widget to help with vaccination.
+        </p>
+        <!-- <div class="embed" data-cdc-widget='healthBot' data-cdc-theme='theme1' class='cdc-widget-color-black'
+          data-cdc-language='en-us'></div>
+        <script src='https://t.cdc.gov/1M1B'></script> -->
+
+
+        <!-- <div class="embed" data-cdc-widget="HDFinderCOVIDVaccination" data-theme="theme1"
+          data-widget-max-height="629px"></div>
+        <script
+          src="https://www.cdc.gov/TemplatePackage/contrib/widgets/tp-widget-external-loader.js?ac=20210201"></script> -->
+
+        <div class="embed" data-cdc-widget="HDFinderCOVIDVaccination" data-theme="theme2"
+          data-widget-max-height="629px"></div>
+
+
+        <script
+          src="https://www.cdc.gov/TemplatePackage/contrib/widgets/tp-widget-external-loader.js?ac=20210201"></script>
+
+
+
+
+
+      </body>
+
+</html>

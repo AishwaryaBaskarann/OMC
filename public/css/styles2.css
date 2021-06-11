@@ -1,0 +1,830 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700,900");
+
+body {
+  background-color: white;
+  margin: 0;
+}
+.embed {
+  width: 450px;
+  position: absolute;
+  margin-bottom: 25px;
+  margin-left: -80px;
+  bottom: 70%;
+  top: 15%;
+  right: 100px;
+
+  left: 68%;
+}
+
+.omc {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 60px;
+  padding-bottom: 60px;
+  font-family: Open Sans;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #3a0ca3;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  /* background: #70d6ff; */
+  color: white;
+  float: inline-start;
+  /* box-shadow: 0px 2px 5px rgb(10, 63, 209); */
+}
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  color: black !important;
+}
+
+#h3 {
+  color: #23049d;
+  padding-right: 25px;
+  margin-top: 20px;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.25s;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#h3:hover {
+  color: black;
+  transition: 0.5s;
+}
+.navbar .icon {
+  display: none;
+}
+@media (max-width: 960px) {
+  nav ul {
+    display: none;
+  }
+  nav select {
+    display: inline-block;
+  }
+}
+.nav a {
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.25s;
+  font-weight: 700px;
+}
+.nav a:hover {
+  background-color: #70d6ff;
+  color: #23049d;
+  transition: 0.5s;
+}
+
+.nav a.active {
+  background-color: #3a86ff;
+  color: white;
+}
+
+.para {
+  max-width: 50%;
+  margin-left: 200px;
+  width: 80%;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  line-height: 1.6em;
+  padding: 85px;
+  color: #03045e;
+  line-height: 50px;
+}
+#about {
+  max-width: 100%;
+  margin-left: 150px;
+  width: 80%;
+  text-align: left;
+  font-family: Open Sans;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  font-style: italic;
+  line-height: 1.6em;
+  padding: 60px;
+  color: #03045e;
+  line-height: 50px;
+}
+.box {
+  border: 1px solid black;
+}
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 2.5% auto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  padding: 25px;
+}
+
+.wrapper .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: -10px;
+  color: #1338be;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper .form {
+  width: 100%;
+}
+.wrapper .form .inputfield {
+  margin-bottom: 15px;
+  display: inline;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label {
+  width: 200px;
+  color: #000000;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.wrapper .form .inputfield .custom_select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+.wrapper .form .inputfield .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+.wrapper .form .inputfield .btn {
+  width: 100%;
+  margin-top: 030px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #e5383b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover {
+  background: #3a0ca3;
+  color: #ccff33;
+  font-weight: bolder;
+}
+
+.inputfiell label {
+  padding-bottom: 10px;
+}
+.btn {
+  width: 100%;
+  margin-top: 030px;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  border: 0px;
+  background: #e5383b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+.btn:hover {
+  background: #3a0ca3;
+  color: #ccff33;
+}
+
+/* footer */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+}
+
+.footer-distributed {
+  background-color: #3a0ca3;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 12px "Montserrat", sans-serif;
+  font-weight: bolder;
+  padding: 50px 50px 60px 50px;
+  /* margin-top: 80px; */
+  margin-top: auto;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+  width: 100%;
+}
+
+.footer-distributed h3 span {
+  color: #a0c4ff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #fafafa;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #21094e;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #1cc5dc;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #1cc5dc;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+.p {
+  cursor: pointer;
+}
+#here {
+  font-size: 18px;
+  text-align: center;
+  font: bold 20px "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #04009a;
+  margin-top: 50px;
+}
+#her {
+  color: #185adb;
+}
+#her:hover {
+  color: #e5383b;
+}
+
+.div2 {
+  display: flex;
+  height: 100px;
+  width: 50%;
+}
+
+/* contact us */
+/* .wrapperc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: #000071;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: -4%;
+}
+
+.wrapperc .titlec h1 {
+  color: #c5ecfd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.input-fieldsc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fieldsc,
+.msg {
+  width: 48%;
+}
+
+.input-fieldsc .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c5ecfd;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #c5ecfd;
+}
+
+.btnc {
+  background: #ff6600;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .input-fieldsc,
+  .msg {
+    width: 100%;
+  }
+} */
+/* contact ends here */
+
+#wrapper2 {
+  width: 100%;
+  background: #fff;
+  margin: 50% 30px;
+  padding: 30px;
+}
+
+.dtitle {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 125px;
+  margin-bottom: 25px;
+  color: #2023cf;
+  text-transform: uppercase;
+  text-align: center;
+}
+.dpara {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 100px auto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  padding: 50px;
+  text-align: center;
+  font-family: "Montserrat";
+  color: #03045e;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 1.6em;
+}
+.ol {
+  max-width: 100%;
+  margin-left: 150px;
+  width: 80%;
+  /* text-align: left; */
+  font-family: Open Sans;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  font-style: italic;
+  line-height: 1.6em;
+  /* padding: 60px; */
+  color: #03045e;
+  line-height: 50px;
+}
+
+.div2 {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  float: left;
+  position: fixed;
+  bottom: 70%;
+  top: 10%;
+  right: 68%px;
+  left: 60px;
+}
+.div3 {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  bottom: 70%;
+  top: 10%;
+  right: 100px;
+  left: 68%;
+}
+
+/* appointment */
+.container {
+  background-color: #fafafa;
+  margin: 80px 18%;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.container-time {
+  background-color: white;
+  padding: 50px;
+  outline: 3px dashed #998100;
+  outline-offset: -30px;
+  text-align: center;
+}
+.heading1 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.heading1-days {
+  color: #998100;
+  font-size: 30px;
+}
+
+.heading1-phone {
+  font-size: 20px;
+}
+.container-form1 {
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #000;
+}
+form {
+  display: grid;
+  grid-row-gap: 20px;
+}
+form p {
+  font-weight: 600;
+}
+.form1-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+select {
+  padding: 10px 15px;
+  color: black;
+}
+.form1-field ::placeholder {
+  color: black;
+}
+
+.btn2 {
+  background-color: #fb8500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.btn2:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* login css */
+.wrapperl {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 2.5% auto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  padding: 75px;
+}
+
+.wrapperl .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: -10px;
+  color: #1338be;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapperl .form {
+  width: 100%;
+}
+.wrapperl.form .inputfield {
+  margin-bottom: 15px;
+  display: inline;
+  align-items: center;
+}
+
+.wrapperl .form .inputfield label {
+  width: 200px;
+  color: #000000;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapperl .form .inputfield .input,
+.wrapperl .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.wrapperl .form .inputfield .custom_select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+.wrapperl .form .inputfield .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapperl .form .inputfield .custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+.wrapperl .form .inputfield .btn {
+  width: 100%;
+  margin-top: 030px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #e5383b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapperl .form .inputfield .btn:hover {
+  background: #3a0ca3;
+}
+
+.inputfiell label {
+  padding-bottom: 10px;
+}
+.btn {
+  width: 100%;
+  margin-top: 030px;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  border: 0px;
+  background: #e5383b;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+.btn:hover {
+  background: #3a0ca3;
+  color: #ccff33;
+  font-weight: bolder;
+}
+
+/* contact and reach us */
+/* .containerc {
+  width: 80%;
+  margin: 50px auto;
+} */
+.contact-box {
+  background: #fff;
+  /* display: flex; */
+}
+.contact-left {
+  /* flex-basis: 60%; */
+  padding: 40px 60px;
+}
+.contact-right {
+  /* flex-basis: 40%; */
+  background: #04009a;
+  color: white;
+  padding: 40px;
+}
